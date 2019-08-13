@@ -1,0 +1,379 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_radius_3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@android:style/Theme.Translucent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:background="@color/colorPrimary"
+            android:text="@string/identif_produto"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/produto"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edtproduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:completionThreshold="2"
+            android:maxLength="80" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qtde_adquirida"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtqtdadquirida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qtde_reclamada"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtqtdreclamada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dt_validade"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtdtvalidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="date"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lote"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtlote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:maxLength="10"
+                    android:textAlignment="center" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:background="@color/colorPrimary"
+            android:text="@string/atendimento"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dt_atendimento"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtdtatendimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="date"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dt_final_atendimento"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtdtfinalatend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="date"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/reacao_a_assistencia"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgreacao"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/aceitou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aceitou" />
+
+                    <RadioButton
+                        android:id="@+id/recusou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recusou" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/solicita_visita_vendas_q"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgvendas"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rgvendassim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sim" />
+
+                    <RadioButton
+                        android:id="@+id/rgvendasnao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nao" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/solicita_visita_tecnica_q"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgtecnico"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtecnicosim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sim" />
+
+                    <RadioButton
+                        android:id="@+id/rbtecniconao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nao" />
+                </RadioGroup>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tecnico"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edttecnico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:enabled="false"
+            android:maxLength="30" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data_hora"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtdatahora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:enabled="false"
+                    android:inputType="datetime"
+                    android:textAlignment="center" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nome_contato"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtnomecontato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:maxLength="80" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_informacoes_prestadas"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtdescinforprestadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:maxLength="200" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instr_passadas_resolv_problema_q"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <RadioGroup
+                    android:id="@+id/rgresolveram"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbresolveramsim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sim" />
+
+                    <RadioButton
+                        android:id="@+id/rbresolveramnao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nao" />
+                </RadioGroup>
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/providencias_tomadas"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtprovtomadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:maxLength="200" />
+    </LinearLayout>
+</ScrollView>

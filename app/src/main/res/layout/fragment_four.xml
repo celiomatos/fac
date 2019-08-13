@@ -1,0 +1,466 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_radius_3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@android:style/Theme.Translucent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:background="@color/colorPrimary"
+            android:text="@string/processo_aplicado"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tipo_masseira"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/ckbconvencional"
+                    android:text="@string/convencional" />
+
+                <CheckBox
+                    android:id="@+id/ckbsemirapida"
+                    android:text="@string/semi_rapida" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/ckbrapida"
+                    android:text="@string/rapida" />
+
+                <CheckBox
+                    android:id="@+id/ckbcilindro"
+                    android:text="@string/cilindro" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mistura_1_velicidade"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtmist1veloc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="number"
+                    android:maxLength="12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutos"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mistura_2_velicidade"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtmist2veloc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="number"
+                    android:maxLength="12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutos"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temp_agua"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edttempagua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graus"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temp_massa"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edttempmassa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graus"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temp_forno"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edttempforno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graus"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:text="@string/fermentacao"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgfermentacao"
+                    android:layout_span="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbcurta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/curta" />
+
+                    <RadioButton
+                        android:id="@+id/rblonga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/longa" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tempo_fermentacao"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edttempoferm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="number"
+                    android:maxLength="12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/horas"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tempo_forneamento"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edttempoforne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="number"
+                    android:maxLength="12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutos"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peso_bola"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtpesobola"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kilo"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peso_pao_cru"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtpesopaocru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grama"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peso_pao_assado"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtpesopaoassado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grama"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qtde_paes_bola"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtqtdpaesbola"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="number"
+                    android:maxLength="12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unidade"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qtde_paes_saca"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtqtdpaessaca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.3"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unidade"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:background="@color/colorPrimary"
+            android:text="@string/conclusao_tecnica"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/avaliacao_cliente"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgavaliacao"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbsatisfeito"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/satisfeito" />
+
+                    <RadioButton
+                        android:id="@+id/rbinsatisfeito"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/insatisfeito" />
+                </RadioGroup>
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conclusao_tecnica"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtconclusao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:maxLength="250" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/obs"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:maxLength="250" />
+    </LinearLayout>
+</ScrollView>
